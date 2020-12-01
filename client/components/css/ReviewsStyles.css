@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.header {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333;
+  max-width: 1500px;
+  width: auto;
+  padding: 20px 0px 0px;
+  margin: 0 auto;
+  font-size: 22px;
+}
+
+.body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333;
+  max-width: 1500px;
+  width: auto;
+  padding: 0 20px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.singleReview {
+  font-family: 'montserrat', 'Arial Black', Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+.rv_header {
+  display: inline-flex;
+  font-size: 1.143em;
+  width: 75%;
+}
+
+.rv_title {
+  margin: 0 15px
+}
+
+.stars {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  margin-left: 1px;
+  margin-top: 1px;
+}
+
+.starsNumber {
+  background: #333;
+  color: white;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-left: 4px;
+  padding: 0px 7px;
+}
+
+.contentBlock {
+  line-height: 1.3;
+}
+
+.rightBlock {
+  font-size: 12.8px;
+  padding: 0 10px;
+  width: 200px;
+  position: relative;
+  float: right;
+  padding: 3px 70px 0px 60px;
+}
+
+.rightBlockLine {
+  padding-bottom: 2px;
+}
+
+.date {
+  color: #767676;
+  font-weight: 300;
+}
+
+.rv_content {
+  color: #333;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  width: 75%;
+}
+
+.footer {
+  width: 75%;
+  padding-bottom: 25px;
+}
+
+.rv_thumbs {
+  display: inline-flex;
+  margin: 0 15px;
+}
+
+.vectorThumb {
+  height: 20px;
+  position: relative;
+}
+
+.vectorThumbDown {
+  transform: rotateX(180deg) scaleX(-1);
+  top: 5px;
+}
+
+.thumbsButton {
+  height: 50px;
+  width: 65px;
+  border: solid;
+  border-radius: 2px;
+  border-width: 1px 1px 2px;
+  border-color: rgb(204, 204, 204);
+  background-color: white;
+  outline: none;
+}
+
+.thumbsOppositeClicked {
+  height: 50px;
+  width: 65px;
+  border: solid;
+  border-radius: 2px;
+  border-width: 1px 1px 2px;
+  border-color: rgb(204, 204, 204);
+  background-color: white;
+  outline: none;
+  opacity: 40%;
+}
+
+.thumbsButton:hover {
+  cursor: pointer;
+  background-color: rgb(239, 239, 239);
+}
+
+.thumbsButton:hover > span > svg > g > path {
+  fill: #cd2418;
+}
+
+.thumbsButton:hover > span {
+  color: #cd2418;
+}
+
+.thumbsButtonClicked {
+  background-color: red;
+  opacity: 40%;
+}
+
+.thumbsButtonClicked:hover {
+  background-color: red;
+  cursor: default;
+}
+
+.thumbsButtonClicked:hover > span {
+  color: white;
+}
+
+.thumbsButtonClicked:hover > span > svg > g > path {
+  fill: white;
+}
+
+.thumbsButtonClickedNumber {
+  color: white;
+}
+
+.thumbsButtonClicked > span {
+  color: white;
+}
+
+.thumbsButtonClicked > span > svg > g > path {
+  fill: white;
+}
+
+.thumbsButtonRight {
+  right: 1px;
+  position: relative;
+}
+
+.thumbsNumber {
+  position: relative;
+  bottom: 4px;
+  font-weight: bold;
+  color: #333;
+}
+
+.rv_recommend {
+  display: inline-flex;
+}
+
+.rv_helpful {
+  position: relative;
+  top: 15px;
+}
+
+.wouldRecommend {
+  margin-bottom: 15px;
+}
+
+/* MORE DETAILS */
+.moreDetailsIcon {
+  width: 20px;
+  height: 20px;
+  padding-left: 18px;
+  transform: rotate(270deg);
+  transition: all .3s ease-in-out;
+  margin-top: 8px;
+}
+
+.moreDetailsButton {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  border: 0;
+  display: inline-flex;
+  color: #333;
+  background-color: white;
+  padding: 0;
+  outline: none;
+}
+
+.moreDetailsButton:hover {
+  cursor: pointer;
+}
+
+.caret {
+  stroke: #0b7bc1;
+  stroke-width: 4px;
+  fill: none;
+}
+
+.moreDetailsIconExpanded {
+  transform: rotate(90deg);
+  margin-top: -9px;
+}
+
+.moreDetailsProsCons {
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  margin: 15px 10px;
+}
+
+.moreDetailsPCHeader {
+  background-color: #ededed;
+  padding: 10px;
+}
+
+.moreDetailsSinglePC {
+  font-size: 12.8px;
+  color: #767676;
+  padding: 10px;
+}
+
+.moreDetailsDescribeYourself {
+  font-weight: 600;
+  font-size: 14px;
+  color: #303533;
+  padding-bottom: 10px;
+}
+
+.moreDetailsExperience {
+  font-size: 14px;
+  color: #767676;
+  padding-left: 15px;
+}
+
+.moreDetailsPCSection {
+  width: 18%;
+  margin-right: 3%;
+}
+
+.nextButton {
+  float: right;
+  background: none;
+  border: none;
+  color: #cd2418;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  margin: -2px 5px 10px 5px;
+  outline: none;
+  font-size: 15px;
+}
+
+.nextButton:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.nextPrevious {
+  display: inline-flex;
+  float: right;
+}
