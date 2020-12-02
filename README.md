@@ -16,12 +16,12 @@
 
 ## Table of Contents
 
-1. [CRUD API] (#CRUD API)
+1. [CRUD](#CRUD)
 2. [Usage](#Usage)
 3. [Requirements](#requirements)
 4. [Development](#development)
 
-## CRUD API
+## CRUD
 
 Action | Method | URL
 -------|--------|-----
