@@ -16,7 +16,7 @@
 
 ## Table of Contents
 
-1. [CRUD API] (#CRUD)
+1. [CRUD API] (#CRUD API)
 2. [Usage](#Usage)
 3. [Requirements](#requirements)
 4. [Development](#development)
