@@ -1,6 +1,6 @@
 # GuitarCentaur - System Design Capstone
 
-> )ptimizing database managment system to support scaling the existing service
+> Optimizing database managment system to support scaling the existing service
 
 ## Related Projects
 
