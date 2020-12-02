@@ -1,6 +1,6 @@
-# Project Name
+# SDC - GuitarCentaur Reviews a la Christina
 
-> Project description
+> )ptimizing database managment system to support scaling the existing service
 
 ## Related Projects
 
@@ -9,6 +9,10 @@
   - https://github.com/hrr49-tully/Guitar-Centaur-Reviews-Service
   - https://github.com/hrr49-tully/Guitar-Centaur-Add-to-Cart
   - https://github.com/hrr49-tully/Guitar-Centaur-Carousel
+
+  - https://github.com/SDC-team3-Cuddy
+  - https://github.com/SDC-team3-Cuddy/Rebecca-SDCService
+  - https://github.com/SDC-team3-Cuddy/Frans-Server
 
 ## Table of Contents
 

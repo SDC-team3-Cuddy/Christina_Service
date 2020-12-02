@@ -58,6 +58,45 @@ app.get('/api/reviews/sort/upVotes', (req, res) => {
   });
 });
 
+// Additional express functions to support CRUD operations
+// Delete review by id:
+app.delete('/api/reviews', (req, res) => {
+  // console.log(req.body);
+  db.query(`DELETE FROM `review` WHERE `id`=?`, [req.body.id], (err, data) => {
+    if (err) {
+      console.error('review deletion from database failed: ', err)
+    } else {
+      console.log('review deletion from database successful');
+      res.send(JSON.stringify(data));
+    };
+  });
+});
+
+// Edit review by id:
+app.put('/api/reviews/', (req, res) => {
+  db.query(`UPDATE `review` SET `title`=?, `contents`=?, `stars`=?, `user`=?, `experiencce`=?, `dateSubmitted`=?, `location`=?, `upVotes`=?, `downVotes`=?, `pros`=?, `cons`=?, `wouldRecommend`=?, where `id`=?`, [req.body.title,req.body.contents, req.body.stars, req.body.user, req.body.experience, req.body.dateSubmitted, req.body.location, req.body.upVotes, req.body.downVotes, req.body.pros, req.body.cons, req.body.wouldRecommend], (err, data) => {
+    if (err) {
+      console.error('review update failed: ', err)
+    } else {
+      console.log('review update successful');
+      res.send(JSON.stringify(data));
+    };
+  });
+});
+
+// Add new review:
+app.post('/api/reviews', (req, res) => {
+  var postData = req.body;
+  db.query(`INSERT INTO reviews SET ?`, postData, (err, data) => {
+    if (err) {
+      console.error('new review insertion failed: ', err)
+    } else {
+      console.log('new review insertion successful');
+      res.send(JSON.stringify(data));
+    };
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`listening on port ${PORT}`);
 });
