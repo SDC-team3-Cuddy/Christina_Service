@@ -1,4 +1,4 @@
-# SDC - GuitarCentaur Reviews a la Christina
+# GuitarCentaur - System Design Capstone
 
 > )ptimizing database managment system to support scaling the existing service
 
@@ -16,9 +16,19 @@
 
 ## Table of Contents
 
-1. [Usage](#Usage)
-1. [Requirements](#requirements)
-1. [Development](#development)
+1. [CRUD API] (#CRUD)
+2. [Usage](#Usage)
+3. [Requirements](#requirements)
+4. [Development](#development)
+
+## CRUD API
+
+Action | Method | URL
+-------|--------|-----
+Create a new review | POST | /api/reviews
+Get review information | GET | /api/reviews/:id
+Update review information | PUT | /api/reviews/:id
+Delete a review | DELETE | /api/reviews/:id
 
 ## Usage
 
