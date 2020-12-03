@@ -60,7 +60,7 @@ app.get('/api/reviews/sort/upVotes', (req, res) => {
 
 // Additional express functions to support CRUD operations
 // Delete review by id:
-app.delete('/api/reviews', (req, res) => {
+app.delete('/api/reviews/:id', (req, res) => {
   // console.log(req.body);
   db.query(`DELETE FROM `review` WHERE `id`=?`, [req.body.id], (err, data) => {
     if (err) {
@@ -73,7 +73,7 @@ app.delete('/api/reviews', (req, res) => {
 });
 
 // Edit review by id:
-app.put('/api/reviews/', (req, res) => {
+app.put('/api/reviews/:id', (req, res) => {
   db.query(`UPDATE `review` SET `title`=?, `contents`=?, `stars`=?, `user`=?, `experiencce`=?, `dateSubmitted`=?, `location`=?, `upVotes`=?, `downVotes`=?, `pros`=?, `cons`=?, `wouldRecommend`=?, where `id`=?`, [req.body.title,req.body.contents, req.body.stars, req.body.user, req.body.experience, req.body.dateSubmitted, req.body.location, req.body.upVotes, req.body.downVotes, req.body.pros, req.body.cons, req.body.wouldRecommend], (err, data) => {
     if (err) {
       console.error('review update failed: ', err)
